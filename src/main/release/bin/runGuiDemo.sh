@@ -2,9 +2,9 @@
 
 source "`dirname "$0"`/functions.sh"
 
+add_classpath ${ISPN_HOME}/../../../target/infinispan-jpastore-gui-demo.jar
 add_classpath ${ISPN_HOME}/lib/infinispan-embedded-*.jar
 add_classpath ${ISPN_HOME}/etc
-add_classpath ${ISPN_HOME}/../../../target/*.jar
 add_classpath ${ISPN_HOME}/bin/runtime-classpath.txt
 
 add_jvm_args $JVM_PARAMS
